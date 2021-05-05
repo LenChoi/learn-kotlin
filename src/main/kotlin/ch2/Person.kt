@@ -7,9 +7,9 @@ class Person(
 
 class Rectangle(val height: Int, val width: Int) {
     val isSquare: Boolean
-    get() {
-        return height == width
-    }
+        get() {
+            return height == width
+        }
 }
 
 fun main(args: Array<String>) {
@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
     println(person.name)
     println(person.isMarried)
 
-    val rectangle = Rectangle(41,43)
+    val rectangle = Rectangle(41, 43)
     println(rectangle.isSquare)
 }
 
