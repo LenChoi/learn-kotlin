@@ -1,6 +1,6 @@
 Chapter2 코틀린 기초
 =================
-###1. Hello, World!
+### 1. Hello, World!
 ```
 println("Hello, world")
 ```
@@ -9,7 +9,8 @@ println("Hello, world")
 - System.out.println -> println
 - 파이썬 처럼 세미콜론(;)를 붙이지 않아도 됨
 
-###2. 함수
+
+### 2. 함수
 ```
 fun max(a: Int, b: Int): Int {
     return if (a > b) a else b
@@ -26,7 +27,8 @@ fun max(a: Int, b: Int) = if (a > b) a else b
 ```
 - 코틀린은 사용자가 반환 타입을 적지 않아도 컴파일러가 함수를 분석해 반환 타입을 정해준다.(타입 추론)
 
-###3. 변수
+
+### 3. 변수
 
 - val (value)
   - 변경 불가능한 참조를 지정하는 변수
@@ -44,7 +46,8 @@ answer = 42
 ```
 - 초기화 식을 사용하지 않고 변수를 선언하려면 변수 타입을 반드시 명시
 
-###4. 문자열 템플릿
+
+### 4. 문자열 템플릿
 ```
 val name = if (args.size > 0) args[0] else "Kotlin"
 println("Hello, $name!")
@@ -54,7 +57,8 @@ println("Hello, $name!")
 - 중괄호 안에 문자열 템플릿을 넣을 수 있음 
 - **변수명 뒤에 바로 한글을 붙여 사용하면 오류가 발생하기 때문에 "${name}님 반가워요" 와 같은 중괄호 사용하자 **
 
-###5. 클래스
+
+### 5. 클래스
 ```
 class Person(
     val name: String, 
